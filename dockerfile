@@ -12,7 +12,7 @@ COPY ${GITHUB_WORKSPACE} /app
 # RUN export AWS_PROFILE="yourAWSprofile"
 
 # update
-RUN apt update && apt install -y
+RUN apt update && apt install upgrade -y
 RUN apt install -yqq curl wget gnupg2 unzip
 
 # install google chrome
